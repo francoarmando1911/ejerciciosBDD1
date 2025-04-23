@@ -22,15 +22,67 @@ public class Libro {
     private String autor;
     private Date fechaPublicacion;
     private int cantPaginas;
-    private String categoria;
+    public enum categoria{
+        FICCION,
+        HISTORIA,
+        ARTE,
+        REFERENCIA
+    }
 
-    public Libro(Integer id, String titulo, int isbn, String autor, Date fechaPublicacion, String categoria, int cantPaginas) {
+    public Libro(Integer id, String titulo, int isbn, Date fechaPublicacion, int cantPaginas, String autor) {
         this.id = id;
         this.titulo = titulo;
         this.isbn = isbn;
-        this.autor = autor;
         this.fechaPublicacion = fechaPublicacion;
-        this.categoria = categoria;
+        this.cantPaginas = cantPaginas;
+        this.autor = autor;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public int getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(int isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public Date getFechaPublicacion() {
+        return fechaPublicacion;
+    }
+
+    public void setFechaPublicacion(Date fechaPublicacion) {
+        this.fechaPublicacion = fechaPublicacion;
+    }
+
+    public int getCantPaginas() {
+        return cantPaginas;
+    }
+
+    public void setCantPaginas(int cantPaginas) {
         this.cantPaginas = cantPaginas;
     }
 }

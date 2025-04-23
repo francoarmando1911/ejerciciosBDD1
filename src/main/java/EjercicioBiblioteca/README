@@ -1,0 +1,38 @@
+En la biblioteca de la facultad se desea llevar un registro de los libros en existencia y los préstamos
+realizados.
+
+Por cada libro que posee la biblioteca se desea conocer los siguientes datos:
+
+    - Título
+    - ISBN
+    - Autor o autores
+    - Fecha de publicación
+    - Cantidad de páginas
+    - Editorial
+    - Dirección y teléfono de la editorial
+    - Categoría(s) a la(s) que pertenece (Ficción, Historia, Arte, Referencia, etc.)
+    - Fecha en que el ejemplar se dio de alta en la biblioteca
+    - Código de inventario del ejemplar
+    - Código de ubicación del ejemplar
+
+Los libros de la biblioteca son prestados a sus usuarios. A cada usuario se le permite retirar hasta tres libros simultáneamente. El plazo de devolución del libro depende de la categoría del usuario: para estudiantes 1 semana; para docentes 1 mes y para investigadores 3 meses.
+De cada usuario se desea conocer:
+- Nombre
+- Dirección
+- Teléfono
+
+Si es estudiante:
+- Número de legajo de alumno
+- Fecha de ingreso a la universidad
+- Lista de materias que cursa actualmente
+
+Si es docente:
+- Número de legajo de profesor.
+- Antigüedad como docente.
+- A qué carreras pertenecen las materias que dicta.
+
+Si es investigador:
+- Su categoría.
+- Proyectos en los participa.
+- Departamento al que pertenece cada proyecto.
+- Qué libros tiene en su poder y desde qué fecha.

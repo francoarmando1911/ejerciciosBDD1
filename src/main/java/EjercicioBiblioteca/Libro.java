@@ -18,10 +18,10 @@ import java.util.Date;
 public class Libro {
     private Integer id;
     private String titulo;
-    private int isbn;
+    private Integer isbn;
     private String autor;
     private Date fechaPublicacion;
-    private int cantPaginas;
+    private Integer cantPaginas;
     public enum categoria{
         FICCION,
         HISTORIA,
@@ -29,13 +29,13 @@ public class Libro {
         REFERENCIA
     }
 
-    public Libro(Integer id, String titulo, int isbn, Date fechaPublicacion, int cantPaginas, String autor) {
+    public Libro(Integer id, String titulo, Integer isbn, String autor, Date fechaPublicacion, Integer cantPaginas) {
         this.id = id;
         this.titulo = titulo;
         this.isbn = isbn;
+        this.autor = autor;
         this.fechaPublicacion = fechaPublicacion;
         this.cantPaginas = cantPaginas;
-        this.autor = autor;
     }
 
     public Integer getId() {
@@ -54,11 +54,11 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public int getIsbn() {
+    public Integer getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(int isbn) {
+    public void setIsbn(Integer isbn) {
         this.isbn = isbn;
     }
 
@@ -78,11 +78,11 @@ public class Libro {
         this.fechaPublicacion = fechaPublicacion;
     }
 
-    public int getCantPaginas() {
+    public Integer getCantPaginas() {
         return cantPaginas;
     }
 
-    public void setCantPaginas(int cantPaginas) {
+    public void setCantPaginas(Integer cantPaginas) {
         this.cantPaginas = cantPaginas;
     }
 }
